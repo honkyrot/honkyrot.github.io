@@ -1,2 +1,3 @@
 # honkyrot.github.io
-website
+personal small website about me.
+yeah thats it.
