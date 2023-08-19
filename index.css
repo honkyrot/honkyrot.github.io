@@ -1,0 +1,131 @@
+/* @font-face { /*custom font RobotoMono*/
+/*    font-family: "RobotoMono";
+    src: url("media/RobotoMono-Medium.ttf");
+} */
+
+@font-face { /*custom font Montserrat*/
+    font-family: "Montserrat";
+    src: url("media/Montserrat-Medium.ttf");
+}
+
+/* general */
+
+p {
+    font-family: "Montserrat";
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Montserrat";
+}
+
+h2 {
+    font-family: "Montserrat";
+}
+
+h3 {
+    font-family: "Montserrat";
+}
+
+h4 {
+    font-family: "Montserrat";
+}
+
+h5 {
+    font-family: "Montserrat";
+}
+
+h6 {
+    font-family: "Montserrat";
+}
+
+/* background */
+
+body {
+    background-color: #303030;
+    padding-left: 25px;
+}
+
+/* buttons */
+/* default colors should be white text */
+
+a { 
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+/* classes */
+
+.name_title_header {  /* header bar that contains the username and links to different pages in horizontal view*/
+    background-color: #303030;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 2%;
+    z-index: 1;
+}
+
+.username_title {  /* username section */
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    padding-right: 1%;
+}
+
+.single_dash_title_split {  /* just a single dash */
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    padding-right: 1%;
+    
+}
+
+.title_title {  /* title section */
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.nav_link_section {  /* sesction for nav links */
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    left: 3%;
+    top: 100px;
+    position: fixed;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.white_line_1_name_title_header{  /* white line splitting between the username and links below */
+    background-color: #ffffff;
+    height: 5px;
+    width: 25%;
+    position: fixed;
+    top: 100px;
+    left: 2%;
+    z-index: 1;
+}
+
+.selected_link_1 {  /* selected link */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* border block classes */
+
+.border_block_1 {  /* shifts the body down by 100px to make room for the header */
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
