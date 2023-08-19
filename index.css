@@ -13,6 +13,7 @@
 p {
     font-family: "Montserrat";
     color: #ffffff;
+    font-size: 22px;
 }
 
 h1 {
@@ -53,7 +54,17 @@ a {
     color: #ffffff;
     font-family: "Montserrat";
     text-decoration: none;
+    font-size: 24px;
 }
+
+/* dynamic html */
+
+/* hover effect for nav links */
+#nav_link_section a:hover { text-shadow: 0 0 5px #ffffff; }  
+
+/* rainbow hover effect for github link */
+#honkyrot_github_link:hover { text-shadow: 0 0 5px #ffffff; }
+
 
 /* classes */
 
@@ -97,8 +108,8 @@ a {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
-    left: 3%;
-    top: 100px;
+    left: 2.6%;
+    top: 112px;
     position: fixed;
     font-size: 20px;
     color: #ffffff;
@@ -107,7 +118,7 @@ a {
 .white_line_1_name_title_header{  /* white line splitting between the username and links below */
     background-color: #ffffff;
     height: 5px;
-    width: 25%;
+    width: 500px;
     position: fixed;
     top: 100px;
     left: 2%;
@@ -119,6 +130,61 @@ a {
     font-weight: bold;
 }
 
+.honkyrot_github_link {  /* github link */
+    background: linear-gradient(to right, #ff0000, #ffff00 , #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.python_color_text {  /* python color text */
+    background: linear-gradient(to right, #ffe05e , #028dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.python_color_text:hover {  /* python text glow hover */
+    text-shadow: 0 0 5px #ffe05e;
+}
+
+.lua_color_text {  /* lua color text */
+    background: linear-gradient(to right, #8585c5, #01a2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.lua_color_text:hover {  /* lua text glow hover */
+    text-shadow: 0 0 5px #01a2ff;
+}
+
+.javascript_color_text {  /* javascript solid color text */
+    color: #f7df1e;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.javascript_color_text:hover {  /* javascript text glow hover */
+    text-shadow: 0 0 5px #f7df1e;
+}
+
+.csharp_color_text {  /* csharp solid color text */
+    color: #ba1ef7;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.csharp_color_text:hover {  /* csharp text glow hover */
+    text-shadow: 0 0 5px #ba1ef7;
+}
+
 /* border block classes */
 
 .border_block_1 {  /* shifts the body down by 100px to make room for the header */
@@ -127,5 +193,16 @@ a {
     top: 0;
     left: 0;
     z-index: 1;
-    
+}
+
+/* animations */
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
