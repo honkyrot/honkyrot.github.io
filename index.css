@@ -40,11 +40,17 @@ h6 {
     font-family: "Montserrat";
 }
 
+header {
+    opacity: 1;
+}
+
 /* background */
 
 body {
     background-color: #303030;
     padding-left: 25px;
+    opacity: 0;
+    transition: opacity 0.25s;
 }
 
 /* buttons */
@@ -185,6 +191,15 @@ a {
     text-shadow: 0 0 5px #ba1ef7;
 }
 
+.small_text {  /* small text */
+    font-size: 14px;
+}
+
+.smaller_text {  /* smaller text */
+    font-size: 10px;
+
+}
+
 /* border block classes */
 
 .border_block_1 {  /* shifts the body down by 100px to make room for the header */
@@ -197,7 +212,7 @@ a {
 
 /* animations */
 
-@keyframes rainbow_animation {
+@keyframes rainbow_animation {  /* rainbow text animation */
     0%,100% {
         background-position: 0 0;
     }
@@ -205,4 +220,12 @@ a {
     50% {
         background-position: 100% 0;
     }
+}
+
+@keyframes fade-in {  /* fade in animation */
+    from { opacity: 0; }
+    }
+
+@keyframes fade-out {  /* fade out animation */
+    to { opacity: 0; }
 }

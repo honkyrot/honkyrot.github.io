@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="shortcut icon" type="image/png" href="media/honkyrot_favicon.ico" />
+    <script type="text/javascript" src="crossfade_transition.js"></script>  <!-- transition script -->
 </head>
 <header> <!-- header bar, copied on all pages -->
     <div class="name_title_header">
@@ -21,17 +22,17 @@
     </div>
     <div class="white_line_1_name_title_header"></div>
     <div class="nav_link_section" id="nav_link_section">  <!-- nav bar -->
-        <a class ="selected_link_1" href="index.html">Home</a> -
-        <a href="about.html">About</a> -
-        <a href="portfolio.html">Portfolio</a> -
-        <a href="contact.html">Contact</a>
+        <a class ="selected_link_1">Home</a> -
+        <a onclick="transitionToPage('about.html')">About</a> -
+        <a onclick="transitionToPage('portfolio.html')">Portfolio</a> -
+        <a onclick="transitionToPage('contact.html')">Contact</a>
     </div>
     <div class="border_block_1"></div>  <!-- border block-->
 </header>
 <body>
     <p>
-        Hello there and welcome to my website! You probably found this through by <a target="_blank" class="honkyrot_github_link" href="https://github.com/honkyrot" id="honkyrot_github_link">Github</a> profile.<br>
-        Anyways, I'm Honkyrot or <i>Hong Rot</i>, a programmer hobbyist and a student.<br>
+        Hello there and welcome to my website! You probably found this through my <a target="_blank" class="honkyrot_github_link" href="https://github.com/honkyrot" id="honkyrot_github_link">Github</a> profile.<br>
+        Anyways, I'm Honkyrot or <em>Hong Rot</em>, a programmer hobbyist and a student.<br>
         This website is a place for me to put my projects and other <i>probably cool(?) </i>stuff.<br>
     </p>
 </body>
