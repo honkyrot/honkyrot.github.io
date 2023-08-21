@@ -49,8 +49,6 @@ header {
 body {
     background-color: #303030;
     padding-left: 25px;
-    opacity: 0;
-    transition: opacity 0.25s;
 }
 
 /* buttons */
