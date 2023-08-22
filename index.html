@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="shortcut icon" type="image/png" href="media/honkyrot_favicon.ico" />
     <script type="text/javascript" src="ajax_loader.js"></script>  <!-- ajax script -->
-    <audio src="media/Vanilla Calamity Mod Music - Serenity - Theme of the Lantern Festival.mp3" source autoplay loop></audio>  <!-- background music -->
 </head>
 <header> <!-- header bar, copied on all pages -->
     <div class="name_title_header">
@@ -21,27 +20,43 @@
             <h1>Home</h1>
         </div>
     </div>
-    <div class="white_line_1_name_title_header"></div>
+    <div class="white_line_1_name_title_header" id="white_line_1_name_title_header"></div>
     <div class="nav_link_section" id="nav_link_section">  <!-- nav bar -->
-        <a onclick="load_page('home')" id="home_button">Home</a> -
-        <a onclick="load_page('about')" id="about_button">About</a> -
-        <a onclick="load_page('portfolio')" id="portfolio_button">Portfolio</a> -
-        <a onclick="load_page('contact')" id="contact_button">Contact</a>
-    </div>
-    <div class="music_box">  <!-- music credits -->
-
+        <a class="link_button" onclick="load_page('home')" id="home_button">Home</a><a>-</a>
+        <a class="link_button" onclick="load_page('about')" id="about_button">About</a><a>-</a>
+        <a class="link_button" onclick="load_page('portfolio')" id="portfolio_button">Portfolio</a><a>-</a>
+        <a class="link_button" onclick="load_page('contact')" id="contact_button">Contact</a>
     </div>
     <div class="border_block_1"></div>  <!-- border block-->
 </header>
 <body>
-    <div class="body" id="body_body">
-        <p>
-            Hello there and welcome to my website! You probably found this through my <a target="_blank" class="honkyrot_github_link" href="https://github.com/honkyrot" id="honkyrot_github_link">Github</a> profile.<br>
-            Anyways, I'm Honkyrot or <em>Hong Rot</em>, a programmer hobbyist and a student.<br>
-            This website is a place for me to put my projects and other <i>probably cool(?) </i>stuff.<br>
-        </p>
-    </div>
+    <span class="ajax_body_span">
+        <div class="ajax_body" id="ajax_body">
+            <p>
+                Hello there and welcome to my website! You probably found this through my <a target="_blank" class="honkyrot_github_link" href="https://github.com/honkyrot" id="honkyrot_github_link">Github</a> profile.<br>
+                Anyways, I'm Honkyrot or <em>Hong Rot</em>, a programmer hobbyist and a student.<br>
+                This website is a place for me to put my projects and other <i>probably cool(?) </i>stuff.<br>
+            </p>
+        </div>
+    </span>
+    
 </body>
+<footer>
+    <div class="music_box">  <!-- music credits -->
+        <div class="audio_player_container" id="audio_player_container">
+            <p class="small_text">
+                Music: <a target="_blank" class="small_text_underline" href="https://youtu.be/qRm4IwboNmM">Vanilla Calamity Mod Music - Serenity - Theme of the Lantern Festival</a><br>
+                Created by: <a target="_blank" class="small_text_underline" href="https://youtube.com/@HeartPlusUp">Heart Plus Up!</a><br>
+            </p>
+            <img class="audio_player_button" id="audio_player_button" src="media/play.svg" onclick="toggle_audio_player()" alt="audio player button">
+            <span id="current_time" class="audio_player_timestamp_text_1">0:00</span>
+            <input type="range" id="seek_slider" max="100" value="0" class="volume_slider">
+            <span id="duration" class="audio_player_timestamp_text_2">0:00</span>
+            <input type="range" id="volume_slider" max="100" value="100">
+        </div>
+        <script type="text/javascript" src="audio_player.js"></script>  <!-- music player -->
+    </div>
+</footer>
 </html>
 
 

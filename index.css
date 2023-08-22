@@ -20,24 +20,8 @@ h1 {
     font-family: "Montserrat";
 }
 
-h2 {
-    font-family: "Montserrat";
-}
-
-h3 {
-    font-family: "Montserrat";
-}
-
-h4 {
-    font-family: "Montserrat";
-}
-
-h5 {
-    font-family: "Montserrat";
-}
-
-h6 {
-    font-family: "Montserrat";
+header {
+    opacity: 1;
 }
 
 header {
@@ -76,7 +60,7 @@ a {
     background-color: #303030;
     height: 100px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 2%;
     z-index: 1;
@@ -106,32 +90,49 @@ a {
     margin-top: 10px;
     font-size: 20px;
     color: #ffffff;
+    transition: opacity 0.25s;
 }
 
 .nav_link_section {  /* sesction for nav links */
     float: left;
+    margin-top: 10px;
+    left: calc(2.6% + 12px);
+    top: 112px;
+    /* position: fixed; */
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+}
+
+.link_button {  /* nav link button */
     margin-right: 10px;
     margin-top: 10px;
-    left: 2.6%;
-    top: 112px;
-    position: fixed;
     font-size: 20px;
-    color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.music_box {  /* music box section */
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 90%;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
 }
 
 .white_line_1_name_title_header{  /* white line splitting between the username and links below */
     background-color: #ffffff;
     height: 5px;
-    width: 500px;
-    position: fixed;
+    width: 468px;
+    /* position: fixed; */
     top: 100px;
     left: 2%;
     z-index: 1;
-}
-
-.selected_link_1 {  /* selected link */
-    color: #ffffff;
-    font-weight: bold;
+    transition: width 0.25s ease-in-out;
 }
 
 .honkyrot_github_link {  /* github link */
@@ -195,13 +196,56 @@ a {
 
 .smaller_text {  /* smaller text */
     font-size: 10px;
+}
 
+.small_text_underline {  /* small text with underline */
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.ajax_body_span {  /* for AJAX body */
+    transition: opacity 0.25s;
+}
+
+.audio_player_container {  /* audio player container */
+    float: right;
+    bottom: 10px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.audio_player_button {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(114deg) brightness(121%) contrast(115%);
+    width: 23px;
+    height: 23px;
+    bottom: -2px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.audio_player_timestamp_text_1 {  /* audio player timestamp text, current_time */
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.audio_player_timestamp_text_2 {  /* audio player timestamp text, duration*/
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+.volume_slider {  /* volume slider */
+    width: 200px;
 }
 
 /* border block classes */
 
 .border_block_1 {  /* shifts the body down by 100px to make room for the header */
-    height: 150px;
+    height: 25px;
     width: 100%;
     top: 0;
     left: 0;
