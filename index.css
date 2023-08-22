@@ -116,8 +116,9 @@ a {
 
 .music_box {  /* music box section */
     float: right;
-    margin-right: 10px;
     margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     width: 90%;
     position: absolute;
     z-index: 2;
@@ -213,14 +214,13 @@ a {
     position: absolute;
     z-index: 2;
     width: 100%;
-
 }
 
 .audio_player_button {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(114deg) brightness(121%) contrast(115%);
     width: 23px;
     height: 23px;
-    bottom: -2px;
+    bottom: -15px;
     position: absolute;
     cursor: pointer;
 }
@@ -228,18 +228,33 @@ a {
 .audio_player_timestamp_text_1 {  /* audio player timestamp text, current_time */
     color: #ffffff;
     font-family: "Montserrat";
+    position: absolute;
     font-size: 16px;
-    margin-left: 25px;
+    left: 25px;
+    bottom: -14px;
 }
 
 .audio_player_timestamp_text_2 {  /* audio player timestamp text, duration*/
     color: #ffffff;
     font-family: "Montserrat";
+    position: absolute;
     font-size: 16px;
+    left: 270px;
+    bottom: -14px;
+}
+
+.seek_slider {  /* seek slider */
+    width: 200px;
+    position: absolute;
+    left: 60px;
+    bottom: -14px;
 }
 
 .volume_slider {  /* volume slider */
-    width: 200px;
+    width: 100px;
+    position: absolute;
+    left: 310px;
+    bottom: -14px;
 }
 
 /* border block classes */

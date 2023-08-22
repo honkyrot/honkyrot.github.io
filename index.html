@@ -49,17 +49,12 @@
                 Created by: <a target="_blank" class="small_text_underline" href="https://youtube.com/@HeartPlusUp">Heart Plus Up!</a><br>
             </p>
             <img class="audio_player_button" id="audio_player_button" src="media/play.svg" onclick="toggle_audio_player()" alt="audio player button">
+            <input type="range" id="seek_slider" max="100" value="0" class="seek_slider">
+            <input type="range" id="volume_slider" max="100" value="100" class="volume_slider">
             <span id="current_time" class="audio_player_timestamp_text_1">0:00</span>
-            <input type="range" id="seek_slider" max="100" value="0" class="volume_slider">
             <span id="duration" class="audio_player_timestamp_text_2">0:00</span>
-            <input type="range" id="volume_slider" max="100" value="100">
         </div>
         <script type="text/javascript" src="audio_player.js"></script>  <!-- music player -->
     </div>
 </footer>
 </html>
-
-
-<!--     <div class="test_image">
-        <img src="media/yuhhuh.webp" alt="yuhhuh">
-    </div>  -->
