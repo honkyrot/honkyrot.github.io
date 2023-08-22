@@ -1,0 +1,15 @@
+<p>
+So, about me.<br>
+I'm a student, a programmer, and a gamer.<br>
+I'm still in high school, but I'm also at a secondary school for programming.<br>
+My programming experience is mostly in <em class="python_color_text">Python</em> and <em class="lua_color_text">Lua/Luau</em> but I'm also attempting <em class="javascript_color_text">JavaScript</em> and <em class="csharp_color_text">C#</em>.<br>
+<br>
+I'm from Myanmar, but I'm currently living in the United States. Wasn't in Myanmar for that long; kinda moved when I was 2.<br>
+For gaming, yeah I do play a variety of games, if you do manage to check my Steam library.<br>
+I'm also one of the shameless people who play gacha games, <i class="small_text">cool mild gambling</i>.<br>
+<i class="small_text">What can a short asian kid do?</i><br>
+<i class="smaller_text">You aleady know I watch anime, albeit very casually.</i><br>
+<br>
+<br>
+oh and I bought this domain cause I like .dev domains, and I wanted to make a website.<br>
+</p>

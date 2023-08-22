@@ -20,29 +20,12 @@ h1 {
     font-family: "Montserrat";
 }
 
-<<<<<<< Updated upstream
-h2 {
-    font-family: "Montserrat";
-}
-
-h3 {
-    font-family: "Montserrat";
-}
-
-h4 {
-    font-family: "Montserrat";
-}
-
-h5 {
-    font-family: "Montserrat";
-}
-
-h6 {
-    font-family: "Montserrat";
-=======
 header {
     opacity: 1;
->>>>>>> Stashed changes
+}
+
+header {
+    opacity: 1;
 }
 
 /* background */
@@ -207,8 +190,6 @@ a {
     text-shadow: 0 0 5px #ba1ef7;
 }
 
-<<<<<<< Updated upstream
-=======
 .small_text {  /* small text */
     font-size: 14px;
 }
@@ -261,7 +242,6 @@ a {
     width: 200px;
 }
 
->>>>>>> Stashed changes
 /* border block classes */
 
 .border_block_1 {  /* shifts the body down by 100px to make room for the header */
@@ -274,7 +254,7 @@ a {
 
 /* animations */
 
-@keyframes rainbow_animation {
+@keyframes rainbow_animation {  /* rainbow text animation */
     0%,100% {
         background-position: 0 0;
     }
@@ -282,4 +262,12 @@ a {
     50% {
         background-position: 100% 0;
     }
+}
+
+@keyframes fade-in {  /* fade in animation */
+    from { opacity: 0; }
+    }
+
+@keyframes fade-out {  /* fade out animation */
+    to { opacity: 0; }
 }

@@ -1,0 +1,3 @@
+<p>You can contact me through my email: <a href="mailto:hrot3756@gmail.com" class="email_link">hrot3756@gmail.com</a><br>
+I'll probably put my phone number here later.<br>
+</p>  

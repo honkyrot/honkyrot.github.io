@@ -1,0 +1,5 @@
+<p>
+Hello there and welcome to my website! You probably found this through my <a target="_blank" class="honkyrot_github_link" href="https://github.com/honkyrot" id="honkyrot_github_link">Github</a> profile.<br>
+Anyways, I'm Honkyrot or <em>Hong Rot</em>, a programmer hobbyist and a student.<br>
+This website is a place for me to put my projects and other <i>probably cool(?) </i>stuff.<br>
+</p>
