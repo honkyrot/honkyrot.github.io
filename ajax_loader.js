@@ -1,5 +1,6 @@
-// Description: This file contains the functions that are used to load the pages
+// This file contains the functions that are used to load the pages
 // Also a small transition to make the page look better
+
 function load_page(page_name) {  // page_name is a string
     var xhttp = new XMLHttpRequest();
     const capitalized = page_name.charAt(0).toUpperCase() + page_name.slice(1);  // Capitalize the first letter of the page name
@@ -15,6 +16,7 @@ function load_page(page_name) {  // page_name is a string
             document.querySelector(".white_line_1_name_title_header").style.width = (page_name.length * 12) + 420 + "px";
             document.getElementById("ajax_body").innerHTML = temp_storage;
             document.getElementById("title_title").innerHTML = page_title;
+            update_audio_player_div_position();
         }, 500);  // 500ms
         }
     };

@@ -1,10 +1,11 @@
-// audio player
-
+// Audio player, plays the music and has a progress bar
+// very cool
 // stuff
 const play_icon = document.getElementById("audio_player_button"); // play/pause button
-const audio_progress_bar = document.getElementById("seek_slider"); // progress bar
+const seek_slider = document.getElementById("seek_slider"); // progress bar
 const duration_text = document.getElementById("duration"); // duration text
 const current_time_text = document.getElementById("current_time"); // current time text
+const volume_slider = document.getElementById("volume_slider"); // volume slider
 
 // audio state
 let state = "paused";
@@ -70,9 +71,36 @@ function update_audio_player() {
             current_time_text.innerHTML = time_convert(audio_current_time);
 
             // update progress bar
-            audio_progress_bar.value = audio_progress;
+            seek_slider.value = audio_progress;
         }
         update_audio_player();
     }, 1000);
 }
+
+// when window is not scrollable, stick it to the bottom of screen
+// else make position relative to page contents
+function update_audio_player_div_position() {
+    if (document.body.scrollHeight <= window.innerHeight) {
+        // when window is not scrollable
+        document.getElementById("audio_player_div").style.position = "fixed";
+    } else {
+        // when window is scrollable
+        document.getElementById("audio_player_div").style.position = "relative";
+    }
+}
+
+// change music time when user wants to seek
+seek_slider.addEventListener('input', function() {
+    var seekto = audio.duration * (seek_slider.value / 100);
+    audio.currentTime = seekto;
+}
+);
+
+// change volume on volume bar change
+volume_slider.addEventListener('input', function() {
+    audio.volume = volume_slider.value / 100;
+}
+);
+
+// start functions
 update_audio_player();
