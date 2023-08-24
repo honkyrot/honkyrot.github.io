@@ -2,4 +2,5 @@
 personal small website about me.
 yeah thats it.
 
-this should be private
+don't expect my code to be great looking, its alright for the most part.
+but hey, if it works it works.
