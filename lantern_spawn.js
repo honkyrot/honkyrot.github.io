@@ -16,7 +16,11 @@ function lantern_spawn() {
     var lantern = document.createElement("img");
     lantern.src = lantern_png;
     lantern.classList.add("lantern");
-    lantern.style.left = ((Math.random() * 200) - 100) + "vw";
+    lantern.style.zIndex = "-1";
+    lantern.style.position = "fixed";
+
+    var random_left_number = ((Math.random() * 200) - 100)
+    lantern.style.left = random_left_number + "vw";
     lantern.style.rotate = clamp(Math.random() * 30, 15, 30) + "deg";
 
     document.getElementById("lantern_storage").appendChild(lantern);
@@ -24,15 +28,19 @@ function lantern_spawn() {
     // after 60s, remove lantern
     setTimeout(function() {
         lantern.remove();
-    }, 60000);
+    }, 90000);
 
     // animate lantern and loop it again
     setTimeout(function() {
+        var move_top = lantern.style.top + -100 + "vh";
+        var move_left = random_left_number + 100 + "vw";
+        console.log(lantern.style.left, move_left)
+
         //animate lantern
         lantern.animate([
-            {top: "-100vh", left: "+100vw"},
+            {top: move_top, left: move_left},
         ], {
-            duration: 60000,
+            duration: 90000,
             iterations: 1
         });
 

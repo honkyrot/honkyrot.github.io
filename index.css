@@ -59,7 +59,6 @@ a {
 /* rainbow hover effect for github link */
 #honkyrot_github_link:hover { text-shadow: 0 0 5px #ffffff; }
 
-
 /* classes */
 
 .name_title_header {  /* header bar that contains the username and links to different pages in horizontal view*/
@@ -301,8 +300,6 @@ a {
 .lantern {  /* lantern image class, most are defined by the lantern_spawn.js*/
     position: fixed;
     top: 100%;
-    z-index: -1;
-    opacity: 1;
 }
 
 /* border block classes */

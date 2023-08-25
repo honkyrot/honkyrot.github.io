@@ -20,7 +20,7 @@ function load_page(page_name) {  // page_name is a string
         }, 500);  // 500ms
         }
     };
-    var file_name = page_name + ".txt";
+    var file_name = "pages/" + page_name + ".html";
     xhttp.open("GET", file_name, true);
     xhttp.send();  // does whatever ajax does
 }
