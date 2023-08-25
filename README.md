@@ -1,6 +1,8 @@
 # honkyrot.github.io
-personal small website about me.
-yeah thats it.
+A small personal website about me and my portfolio; that's about it.
+Expect my code to be mid? I don't know but it's alright for me.
+I'm still trying to learn, so if you want to help, great!
+You are free to explore my website and stuff.
 
-don't expect my code to be great looking, its alright for the most part.
-but hey, if it works it works.
+This repository is now public and available to be viewed directly.
+This website uses music that is not mine, all credit goes to that creator.
