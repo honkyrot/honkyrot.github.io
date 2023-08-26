@@ -11,8 +11,11 @@ const volume_slider = document.getElementById("volume_slider"); // volume slider
 let state = "paused";
 
 // audio var
-var audio = new Audio('media/Vanilla Calamity Mod Music - Serenity - Theme of the Lantern Festival.mp3');
-audio.volume = 0.2;
+// I do not own the rights to this music, all rights go to the original creator
+// Music: Serenity - Theme of the Lantern Festival
+// By: Heart Plus Up!
+var audio = new Audio('media/Vanilla Calamity Mod Music - Serenity - Theme of the Lantern Festival.mp3');  // bpm is 140
+audio.volume = 0.2; 
 audio.autoplay = true;
 audio.controls = true;
 audio.loop = true; 

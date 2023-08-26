@@ -24,3 +24,9 @@ function load_page(page_name) {  // page_name is a string
     xhttp.open("GET", file_name, true);
     xhttp.send();  // does whatever ajax does
 }
+
+// load page on page load
+window.onload = function() {
+    load_page("home");
+    update_audio_player();
+}
