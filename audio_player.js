@@ -86,9 +86,11 @@ function update_audio_player_div_position() {
     if (document.body.scrollHeight <= window.innerHeight) {
         // when window is not scrollable
         document.getElementById("audio_player_div").style.position = "fixed";
+        console.log("not scrollable");
     } else {
         // when window is scrollable
         document.getElementById("audio_player_div").style.position = "relative";
+        console.log("scrollable");
     }
 }
 

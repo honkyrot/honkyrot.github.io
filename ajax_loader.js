@@ -26,7 +26,13 @@ function load_page(page_name) {  // page_name is a string
 }
 
 // load page on page load
+const debug = false;
+
 window.onload = function() {
-    load_page("home");
-    update_audio_player();
+    if (!debug) {
+        load_page("home");
+        update_audio_player();
+    } else {
+        console.log("Debug mode is on, not loading page");
+    }
 }
