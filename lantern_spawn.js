@@ -3,6 +3,7 @@
 // Like the Terraria lantern event, I find that very relaxing, plus the music with the mod really helps!
 
 const lantern_png = "media/lantern.png";
+const lantern_storage = document.getElementById("lantern_storage");
 
 //vw = viewport width
 //vh = viewport height
@@ -26,7 +27,7 @@ function lantern_spawn() {
     lantern.style.left = random_left_number + "vw";
     lantern.style.rotate = clamp(Math.random() * 20, 10, 20) + "deg";
 
-    document.getElementById("lantern_storage").appendChild(lantern);
+    lantern_storage.appendChild(lantern);
 
     // after 60s, remove lantern
     setTimeout(function() {

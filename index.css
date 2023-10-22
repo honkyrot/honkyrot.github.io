@@ -122,6 +122,17 @@ a {
     user-select: none;
 }
 
+.moon_svg_img {  /* the moon */
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-right: 25px;
+    float: right;
+    rotate: 25deg;
+    z-index: -5;
+    transition: opacity 0.25s;
+}
+
 .white_line_1_name_title_header{  /* white line splitting between the username and links below */
     background-color: #ffffff;
     height: 5px;
@@ -310,6 +321,15 @@ a {
     top: 100%;
 }
 
+.star_storage {  /* like the lantern storage, a div for stars. */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .portfolio_box {  /* creates a div that holds 5 portfolio entries, used for the portfolio page, flex*/
     display: flex;
     flex-direction: row;
@@ -317,8 +337,8 @@ a {
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    position: absolute;
-    top: 220px;
+    position: relative;
+    top: 0px;
     left: 50%;
     margin-left: -45%;
     z-index: 2;
@@ -348,6 +368,14 @@ a {
 
 .portfolio_title:hover {  /* portfolio title hover, makes the text glow */
     text-shadow: 0 0 5px #ffffff;
+}
+
+.portfolio_vfx_bar {
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    position: absolute;
+    background-color: #000000;
 }
 
 /* border block classes */
