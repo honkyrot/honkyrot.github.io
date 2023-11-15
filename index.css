@@ -136,7 +136,7 @@ a {
 .white_line_1_name_title_header{  /* white line splitting between the username and links below */
     background-color: #ffffff;
     height: 5px;
-    width: 468px;
+    width: 600px;
     /* position: fixed; */
     top: 100px;
     left: 2%;
