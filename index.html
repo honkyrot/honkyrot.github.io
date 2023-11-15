@@ -23,9 +23,10 @@
         </div>
     </div>
     <div class="white_line_1_name_title_header" id="white_line_1_name_title_header"></div>
-    <div class="nav_link_section" id="nav_link_section">  <!-- nav bar -->
+    <div class="nav_link_section" id="nav_link_section">  <!-- contains my nav buttons -->
         <a class="link_button" onclick="load_page('home')" id="home_button">Home</a><a>-</a>
         <a class="link_button" onclick="load_page('about')" id="about_button">About</a><a>-</a>
+        <a class="link_button" onclick="load_page('skills')" id="skill_button">Skills</a><a>-</a>
         <a class="link_button" onclick="load_page('portfolio')" id="portfolio_button">Portfolio</a><a>-</a>
         <a class="link_button" onclick="load_page('contact')" id="contact_button">Contact</a>
     </div>
@@ -36,7 +37,7 @@
     <span class="ajax_body_span">
         <div class="ajax_body" id="ajax_body">
             <!-- ajax content goes here -->
-           
+            
         </div>
     </span>
     <div class="star_storage" id="star_storage"></div>  <!-- stars storage -->
@@ -45,8 +46,8 @@
     <script type="text/javascript" src="lantern_spawn.js"></script>  <!-- lantern script -->
 </body>
 <footer>
-    <div class="audio_player_div" id="audio_player_div">
-        <p class="small_text">
+    <div class="audio_player_div" id="audio_player_div">  <!-- music player -->
+        <p class="small_text">  <!-- music credits -->
             Music: <a target="_blank" class="small_text_underline" href="https://youtu.be/qRm4IwboNmM">Vanilla Calamity Mod Music - Serenity - Theme of the Lantern Festival</a><br>
             Created by: <a target="_blank" class="small_text_underline" href="https://youtube.com/@HeartPlusUp">Heart Plus Up!</a><br>
         </p>
@@ -55,7 +56,7 @@
         <input type="range" id="volume_slider" max="100" value="20" class="volume_slider">
         <span id="current_time" class="audio_player_timestamp_text_1">0:00</span>
         <span id="duration" class="audio_player_timestamp_text_2">0:00</span>
-        <script type="text/javascript" src="audio_player.js"></script>  <!-- music player -->
+        <script type="text/javascript" src="audio_player.js"></script>
     </div>
 </footer>
 </html>

@@ -1,6 +1,9 @@
 // This file contains the functions that are used to load the pages
 // Also a small transition to make the page look better
 
+const ajax_body = document.getElementById("ajax_body");
+const title_title = document.getElementById("title_title");  // title_title is the title of the page (e.g. Home, About, etc.)
+
 function load_page(page_name) {  // page_name is a string
     var xhttp = new XMLHttpRequest();
     const capitalized = page_name.charAt(0).toUpperCase() + page_name.slice(1);  // Capitalize the first letter of the page name
@@ -14,8 +17,8 @@ function load_page(page_name) {  // page_name is a string
             document.querySelector(".ajax_body_span").style.opacity = "1";
             document.querySelector(".title_title").style.opacity = "1";
             document.querySelector(".white_line_1_name_title_header").style.width = (page_name.length * 12) + 420 + "px";
-            document.getElementById("ajax_body").innerHTML = temp_storage;
-            document.getElementById("title_title").innerHTML = page_title;
+            ajax_body.innerHTML = temp_storage;
+            title_title.innerHTML = page_title;
             update_audio_player_div_position();
         }, 500);  // 500ms
         }
@@ -24,10 +27,9 @@ function load_page(page_name) {  // page_name is a string
     xhttp.open("GET", file_name, true);
     xhttp.send();  // does whatever ajax does
 }
-
-// load page on page load
 const debug = false;
 
+// load home page on page load
 window.onload = function() {
     if (!debug) {
         load_page("home");

@@ -61,7 +61,7 @@ function time_convert(time) {
     return String(minutes) + ":" + String(seconds);
 }
 
-// update audio player per 0.25s
+// update audio player per second
 function update_audio_player() {
     setTimeout(function () {
         if (state == "playing") {
