@@ -26,7 +26,7 @@ function load_page(page_name) {  // page_name is a string
     xhttp.open("GET", file_name, true);
     xhttp.send();  // does whatever ajax does
 }
-const debug = false;
+const debug = true;
 
 // load home page on page load
 window.onload = function() {
@@ -37,3 +37,8 @@ window.onload = function() {
         console.log("Debug mode is on, not loading page");
     }
 }
+
+// force load page (debug for testing)
+//window.onload = function() {
+//    load_page("skills");
+//}

@@ -24,7 +24,7 @@ header {
 
 body {
     background-color: #303030;
-    padding-left: 25px;
+    padding: 10px;
 }
 
 .background_gradient {  /* background div gradient */
@@ -97,8 +97,8 @@ a {
 
 .nav_link_section {  /* sesction for nav links */
     float: left;
-    margin-top: 10px;
-    left: calc(2.6% + 12px);
+    margin-top: 16px;
+    left: calc(2% + 8px);
     top: 112px;
     /* position: fixed; */
     position: absolute;
@@ -220,6 +220,10 @@ a {
     transition: opacity 0.25s;
 }
 
+.ajax_body {  /* for the AJAX body */
+    padding: 10px;
+}
+
 .audio_player_div {  /* audio player container */
     float: left;
     bottom: 20px;
@@ -330,7 +334,7 @@ a {
     z-index: -1;
 }
 
-.portfolio_box {  /* creates a div that holds 5 portfolio entries, used for the portfolio page, flex*/
+.portfolio_box {  /* creates a div that holds X portfolio entries, used for the portfolio page, flex*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -370,12 +374,28 @@ a {
     text-shadow: 0 0 5px #ffffff;
 }
 
-.portfolio_vfx_bar {
-    width: 100%;
-    height: 10px;
-    bottom: 0;
-    position: absolute;
-    background-color: #000000;
+.portfolio_seperator { /* seperator title between collections of projects */
+    width: 90%;
+    height: 32px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 32px;
+    left: 50%;
+    margin-left: -45%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.skill_box_primary {  /* skill box, primary */
+    width: 90%;
+    height: 200px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 10px;
+    left: 50%;
+    margin-left: -45%;
 }
 
 /* border block classes */
