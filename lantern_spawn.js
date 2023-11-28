@@ -19,6 +19,7 @@ function lantern_spawn() {
     lantern.classList.add("lantern");
     lantern.style.zIndex = "-1";
     lantern.style.position = "fixed";
+    lantern.style.backgroundColor = "transparent";
 
     // lantern style glow
     lantern.style.boxShadow = "0 0 15px 5px rgba(255, 255, 150, 0.4)";

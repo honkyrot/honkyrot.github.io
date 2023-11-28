@@ -19,14 +19,14 @@ function load_page(page_name) {  // page_name is a string
             ajax_body.innerHTML = temp_storage;
             title_title.innerHTML = page_title;
             update_audio_player_div_position();
-        }, 500);  // 500ms
+        }, 400);  // 500ms
         }
     };
     var file_name = "pages/" + page_name + ".html";
     xhttp.open("GET", file_name, true);
     xhttp.send();  // does whatever ajax does
 }
-const debug = true;
+const debug = false;
 
 // load home page on page load
 window.onload = function() {
