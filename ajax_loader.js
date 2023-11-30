@@ -19,7 +19,7 @@ function load_page(page_name) {  // page_name is a string
             ajax_body.innerHTML = temp_storage;
             title_title.innerHTML = page_title;
             update_audio_player_div_position();
-        }, 400);  // 500ms
+        }, 300);  // 300ms
         }
     };
     var file_name = "pages/" + page_name + ".html";

@@ -30,6 +30,17 @@ function lantern_spawn() {
 
     lantern_storage.appendChild(lantern);
 
+    // random chance for easteregg
+
+    //var rng_chance = Math.random();
+
+    //if (rng_chance < 1) {
+    //    var panel_background = document.createElement("div");
+     //   panel_background.classList.add("egg_1_panel_background");
+//
+     //   lantern.appendChild(panel_background);
+   // }
+
     // after 60s, remove lantern
     setTimeout(function() {
         lantern.remove();
