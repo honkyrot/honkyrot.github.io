@@ -25,6 +25,7 @@ header {
 body {
     background-color: #303030;
     padding: 10px;
+    position: relative;
 }
 
 .background_gradient {  /* background div gradient */
@@ -358,12 +359,21 @@ a {
     transition: background-color 0.25s;
 }
 
+.portfolio_entry_half {  /* portfolio entry, a smaller box but holds the text and link */
+    width: 45%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.25s;
+}
+
 .portfolio_entry:hover {  /* portfolio entry hover, makes the background color more opaque */
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .portfolio_title {  /* portfolio title text */
-    font-size: 42px;
+    font-size: 28px;
     color: #ffffff;
     font-family: "Montserrat";
     font-weight: bold;
