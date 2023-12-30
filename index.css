@@ -28,7 +28,8 @@ body {
     position: relative;
 }
 
-.background_gradient {  /* background div gradient */
+/* background div gradient */
+.background_gradient {  
     background: linear-gradient(to bottom, #000000, #00006b);
     background-size: 400% 100%;
     position: fixed;
@@ -61,7 +62,8 @@ a {
 
 /* classes */
 
-.name_title_header {  /* header bar that contains the username and links to different pages in horizontal view*/
+/* header bar that contains the username and links to different pages in horizontal view*/
+.name_title_header {  
     height: 100px;
     width: 100%;
     /* position: fixed; */
@@ -70,7 +72,8 @@ a {
     z-index: 1;
 }
 
-.username_title {  /* username section */
+/* username section */
+.username_title {  
     float: left;
     margin-left: 10px;
     margin-top: 10px;
@@ -79,7 +82,8 @@ a {
     padding-right: 1%;
 }
 
-.single_dash_title_split {  /* just a single dash */
+/* just a single dash */
+.single_dash_title_split {  
     float: left;
     margin-top: 10px;
     font-size: 20px;
@@ -87,7 +91,8 @@ a {
     padding-right: 1%;
 }
 
-.title_title {  /* title section */
+/* title section */
+.title_title {  
     float: left;
     margin-right: 10px;
     margin-top: 10px;
@@ -95,8 +100,8 @@ a {
     color: #ffffff;
     transition: opacity 0.25s;
 }
-
-.nav_link_section {  /* sesction for nav links */
+/* sesction for nav links */
+.nav_link_section { 
     float: left;
     margin-top: 16px;
     left: calc(2% + 8px);
@@ -107,7 +112,8 @@ a {
     text-align: left;
 }
 
-.link_button {  /* nav link button, makes it unselectable because GOOGLE KEEPS SELECTING IT AND SHOWS THE DICTIONARY*/
+/* nav link button, makes it unselectable because GOOGLE KEEPS SELECTING IT AND SHOWS THE DICTIONARY*/
+.link_button {  
     margin-right: 10px;
     margin-top: 10px;
     font-size: 24px;
@@ -123,7 +129,8 @@ a {
     user-select: none;
 }
 
-.moon_svg_img {  /* the moon */
+/* the moon */
+.moon_svg_img {  
     width: 120px;
     height: 120px;
     margin-top: 10px;
@@ -134,7 +141,8 @@ a {
     transition: opacity 0.25s;
 }
 
-.white_line_1_name_title_header{  /* white line splitting between the username and links below */
+/* white line splitting between the username and links below */
+.white_line_1_name_title_header{  
     background-color: #ffffff;
     height: 5px;
     width: 600px;
@@ -145,7 +153,8 @@ a {
     transition: width 0.25s ease-in-out;
 }
 
-.honkyrot_github_link {  /* github link */
+/* github link */
+.honkyrot_github_link {  
     background: linear-gradient(to right, #ff0000, #ffff00 , #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
     -webkit-background-clip: text;
     background-clip: text;
@@ -154,7 +163,8 @@ a {
     background-size: 400% 100%;
 }
 
-.python_color_text {  /* python color text */
+/* python color text */
+.python_color_text { 
     background: linear-gradient(to right, #ffe05e , #028dff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -164,11 +174,13 @@ a {
     transition: text-shadow 0.25s;
 }
 
-.python_color_text:hover {  /* python text glow hover */
+/* python text glow hover */
+.python_color_text:hover {  
     text-shadow: 0 0 5px #ffe05e;
 }
 
-.lua_color_text {  /* lua color text */
+/* lua color text */
+.lua_color_text {  
     background: linear-gradient(to right, #8585c5, #01a2ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -178,54 +190,65 @@ a {
     transition: text-shadow 0.25s;
 }
 
-.lua_color_text:hover {  /* lua text glow hover */
+/* lua text glow hover */
+.lua_color_text:hover {  
     text-shadow: 0 0 5px #01a2ff;
 }
 
-.javascript_color_text {  /* javascript solid color text */
+/* javascript solid color text */
+.javascript_color_text {  
     color: #f7df1e;
     text-decoration: none;
     font-style: normal;
     transition: text-shadow 0.25s;
 }
 
-.javascript_color_text:hover {  /* javascript text glow hover */
+/* javascript text glow hover */
+.javascript_color_text:hover {  
     text-shadow: 0 0 5px #f7df1e;
 }
 
-.csharp_color_text {  /* csharp solid color text */
+/* csharp solid color text */
+.csharp_color_text {  
     color: #ba1ef7;
     text-decoration: none;
     font-style: normal;
     transition: text-shadow 0.25s;
 }
 
-.csharp_color_text:hover {  /* csharp text glow hover */
+/* csharp text glow hover */
+.csharp_color_text:hover {  
     text-shadow: 0 0 5px #ba1ef7;
 }
 
-.small_text {  /* small text */
+/* small text */
+.small_text {  
     font-size: 14px;
 }
 
-.smaller_text {  /* smaller text */
+/* smaller text */
+.smaller_text {  
     font-size: 10px;
 }
 
-.small_text_underline {  /* small text with underline */
+/* small text with underline */
+.small_text_underline {  
     font-size: 14px;
     text-decoration: underline;
 }
 
-.ajax_body_span {  /* for AJAX body */
+/* for AJAX body */
+.ajax_body_span {  
     transition: opacity 0.25s;
 }
 
-.ajax_body {  /* for the AJAX body */
+/* for the AJAX body */
+.ajax_body {  
     padding: 10px;
 }
 
-.audio_player_div {  /* audio player container */
+/* audio player container */
+.audio_player_div { 
     float: left;
     bottom: 20px;
     position: fixed;
@@ -233,6 +256,7 @@ a {
     width: 90%;
 }
 
+/* audio player button */
 .audio_player_button {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(114deg) brightness(121%) contrast(115%);
     width: 23px;
@@ -242,7 +266,8 @@ a {
     cursor: pointer;
 }
 
-.audio_player_timestamp_text_1 {  /* audio player timestamp text, current_time */
+/* audio player timestamp text, current_time */
+.audio_player_timestamp_text_1 { 
     color: #ffffff;
     font-family: "Montserrat";
     position: absolute;
@@ -251,7 +276,8 @@ a {
     bottom: -14px;
 }
 
-.audio_player_timestamp_text_2 {  /* audio player timestamp text, duration*/
+/* audio player timestamp text, duration*/
+.audio_player_timestamp_text_2 {  
     color: #ffffff;
     font-family: "Montserrat";
     position: absolute;
@@ -260,7 +286,8 @@ a {
     bottom: -14px;
 }
 
-.seek_slider {  /* seek slider */
+/* seek slider */
+.seek_slider {  
     width: 200px;
     position: absolute;
     left: 60px;
@@ -270,6 +297,7 @@ a {
     background: #000000;
 }
 
+/* seek slider thumb */
 .seek_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -279,6 +307,7 @@ a {
     cursor: pointer;
 }
 
+/* seek slider thumb */
 .seek_slider::-moz-range-thumb {
     width: 15px;
     height: 15px;
@@ -286,7 +315,8 @@ a {
     cursor: pointer;
 }
 
-.volume_slider {  /* volume slider */
+/* volume slider */
+.volume_slider {  
     width: 100px;
     position: absolute;
     left: 310px;
@@ -296,6 +326,7 @@ a {
     background: #000000;
 }
 
+/* volume slider thumb */
 .volume_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -305,6 +336,7 @@ a {
     cursor: pointer;
 }
 
+/* volume slider thumb */
 .volume_slider::-moz-range-thumb {
     width: 15px;
     height: 15px;
@@ -312,6 +344,7 @@ a {
     cursor: pointer;
 }
 
+/* audio player title text */
 .lantern_storage {  /* storage div for lanterns that are spawned */
     width: 100%;
     height: 100%;
@@ -321,11 +354,13 @@ a {
     z-index: -1;
 }
 
+/* lantern image class, most are defined by the lantern_spawn.js*/
 .lantern {  /* lantern image class, most are defined by the lantern_spawn.js*/
     position: fixed;
     top: 100%;
 }
 
+/* star storage */
 .star_storage {  /* like the lantern storage, a div for stars. */
     width: 100%;
     height: 100%;
@@ -335,7 +370,8 @@ a {
     z-index: -1;
 }
 
-.portfolio_box {  /* creates a div that holds X portfolio entries, used for the portfolio page, flex*/
+/* creates a div that holds X portfolio entries, used for the portfolio page, flex*/
+.portfolio_box {  
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -350,7 +386,8 @@ a {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.portfolio_entry {  /* portfolio entry, a smaller box but holds the text and link */
+/* portfolio entry, a smaller box but holds the text and link */
+.portfolio_entry {  
     width: 100%;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -359,7 +396,8 @@ a {
     transition: background-color 0.25s;
 }
 
-.portfolio_entry_half {  /* portfolio entry, a smaller box but holds the text and link */
+/* portfolio entry, a smaller box but holds the text and link */
+.portfolio_entry_half {  
     width: 45%;
     height: 250px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -368,11 +406,20 @@ a {
     transition: background-color 0.25s;
 }
 
-.portfolio_entry:hover {  /* portfolio entry hover, makes the background color more opaque */
+/* portfolio entry hover, makes the background color more opaque */
+.portfolio_entry_half:hover { 
     background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 4px #ffffff;
 }
 
-.portfolio_title {  /* portfolio title text */
+/* 2 */
+.portfolio_entry:hover {  
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 4px #ffffff;
+}
+
+/* portfolio title text */
+.portfolio_title {  
     font-size: 28px;
     color: #ffffff;
     font-family: "Montserrat";
@@ -380,11 +427,13 @@ a {
     transition: text-shadow 0.25s;
 }
 
-.portfolio_title:hover {  /* portfolio title hover, makes the text glow */
+/* portfolio title hover, makes the text glow */
+.portfolio_title:hover {  
     text-shadow: 0 0 5px #ffffff;
 }
 
-.portfolio_seperator { /* seperator title between collections of projects */
+/* seperator title between collections of projects */
+.portfolio_seperator { 
     width: 90%;
     height: 32px;
     position: relative;
@@ -397,7 +446,8 @@ a {
     align-items: center;
 }
 
-.skill_box {  /* skill box, primary */
+/* skill box, primary */
+.skill_box {  
     width: 90%;
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
@@ -407,7 +457,8 @@ a {
     margin-left: -45%;
 }
 
-.skill_box_title {  /* skill box title */
+/* skill box title */
+.skill_box_title {  
     font-size: 18px;
     color: #ffffff;
     font-family: "Montserrat";
@@ -416,14 +467,16 @@ a {
     transition: text-shadow 0.25s;
 }
 
-.skill_list {  /* skill list, unordered */
+ /* skill list, unordered */
+.skill_list { 
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
 }
 
 /* border block classes */
 
-.border_block_1 {  /* shifts the body down by 100px to make room for the header */
+/* shifts the body down by 100px to make room for the header */
+.border_block_1 {  
     height: 40px;
     width: 100%;
     top: 0;
