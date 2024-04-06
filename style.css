@@ -1,0 +1,235 @@
+/* general styles */
+@font-face { /*custom font JetBrains*/
+    font-family: "JetBrains Mono";
+    src: url("media/JetBrainsMono-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: #212738;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 22px;
+    cursor: default;
+}
+
+/* title size */
+h1 {
+    color: #ffffff;
+    font-size: 40px;
+    cursor: default;
+    z-index: 2;
+}
+
+h2 {
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+header {
+    padding: 80px;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff0080;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0080;
+}
+
+/* variables */
+/* none yet */
+
+/* for AJAX body */
+.ajax_body_span {  
+    transition: opacity 0.25s;
+}
+
+.ajax_body {
+    /* nothing yet */
+}
+
+/* sidebar */
+.sidebar_nav {
+    background-color: #00bfff;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+/* website title */
+.main_title {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: left;
+    position: absolute;
+    margin-top: 10px;
+    left: 46px;
+    opacity: 0;
+    transition: 0.5s opacity;
+    z-index: 1;
+    top: 6px;
+}
+
+.title_decor {
+    background-color: #ff0080;
+    position: absolute;
+    width: 0px;
+    height: 70%;
+    top: 16px;
+    left: -14px;
+    transition: 0.5s all;
+}
+
+.bg_title_decor {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    z-index: -1;
+    transition: 0.6s all;
+}
+
+.page_title_text{
+    transition: 0.2s opacity;
+}
+
+/* sesction for nav links */
+.nav_link_section { 
+    color: #ffffff;
+    float: left;
+    margin-top: 16px;
+    left: 16px;
+    top: 95px;
+    /* position: fixed; */
+    position: absolute;
+    font-size: 25px;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    width: 0px;
+    overflow: hidden;
+    transition: 1s width;
+}
+
+.nav_link_div {
+    color: #ffffff;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.4s background-color, 0.4s color;
+}
+
+.nav_link_div:hover {
+    color: #ff0080;
+    cursor: pointer;
+}
+
+/* github link */
+.honkyrot_github_link {  
+    background: linear-gradient(to right, #ff0000, #ffff00 , #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+/* MY EMAIL !!!! */
+.email_link {
+    background-color: #212738;
+    color: #ff0080;
+    text-decoration: none;
+    transition: 0.4s color, 0.4s background-color;
+}
+
+.email_link:hover {
+    background-color: #ff0080;
+    color: #ffffff;
+}
+
+/* skill title */
+.skills_title {
+    width: fit-content;
+    position: relative;
+    height: 38px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 4px solid #ff0080;
+    border-style: solid none none none;
+
+}
+
+/* skill flex div */
+.skill_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.skill_box {
+    background-color: #ff0080;
+    width: 26%;
+    height: fit-content;
+    margin: 8px;
+    position: relative;
+    border: #212738 6px solid;
+    transition: 0.5s all;
+    padding: 1%;
+}
+
+.skill_box:hover{
+    border: #ffffff 6px solid;
+    padding-left: 3%;
+    padding-right: 3%;
+}

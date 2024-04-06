@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<!-- its my HTML code! its alright -->
-<!-- version 0.8 -->
+<!-- version 0.1 -->
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="shortcut icon" type="image/png" href="media/honkyrot_favicon.ico" />
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="shortcut icon" type="image/png" href="media/honkyrot_favicon.ico" />
+    </head>
+
+    <header>
+        <!-- <div class="background_gradient" id="background_gradient"></div>   background gradient -->
+
+        <!-- a main title, shows as honkyrot.dev -->
+        <div class="main_title" id="main_title">
+            <div class="title_decor" id="title_decor">
+                <div class="bg_title_decor" id="bg_title_decor"></div>
+            </div>
+            <h1 style="position: relative;"><span class="main_title_text" id="main_title_text">honkyrot.dev</span> - <span class="page_title_text" id="page_title_text"></span></h1>
+        </div>
+        
+        <!-- contains my nav buttons -->
+        <div class="nav_link_section" id="nav_link_section">
+            <div class="nav_link_div" id="link_button_1"> 
+                <a class="link_button" onclick="load_page('home')" id="home_button">Home</a>
+            </div>
+            <div class="nav_link_div" id="link_button_2"> 
+                <a class="link_button" onclick="load_page('about')" id="about_button">About</a>
+            </div>
+            <div class="nav_link_div" id="link_button_3"> 
+                <a class="link_button" onclick="load_page('skills')" id="skills_button">Skills</a>
+            </div>
+            <div class="nav_link_div" id="link_button_4"> 
+                <a class="link_button" onclick="load_page('portfolio')" id="portfolio_button">Portfolio</a>
+            </div>
+            <div class="nav_link_div" id="link_button_5"> 
+                <a class="link_button" onclick="load_page('contact')" id="contact_button">Contact</a>
+            </div>
+            <div class="nav_link_div" id="link_button_6"> 
+                <a class="link_button" onclick="load_page('other')" id="other_button">Other</a>
+            </div>
+        </div>
+    </header>
+
+    <body id="body">
+
+        <span class="ajax_body_span">
+            <div class="ajax_body" id="ajax_body">
+                <!-- ajax content goes here -->
+                
+            </div>
+        </span>
+    </body>
+
+    <footer>
+    </footer>
+
     <script type="text/javascript" src="ajax_loader.js"></script>  <!-- ajax script -->
-</head>
-<header> <!-- header bar, copied on all pages -->
-    <img class="moon_svg_img" src="media/full_moon.svg" alt="moon svg">  <!-- THE MOON -->
-    <div class="name_title_header">
-        <div class="username_title">  <!-- username -->
-            <h1>Honkyrot.dev</h1>
-        </div>
-        <div class="single_dash_title_split">
-            <h1>-</h1>
-        </div>
-        <div class="title_title" id="title_title">  <!-- title -->
-            <h1><!--home title--></h1>
-        </div>
-    </div>
-    <div class="white_line_1_name_title_header" id="white_line_1_name_title_header"></div>
-    <div class="nav_link_section" id="nav_link_section">  <!-- contains my nav buttons -->
-        <a class="link_button" onclick="load_page('home')" id="home_button">Home</a><a>-</a>
-        <a class="link_button" onclick="load_page('about')" id="about_button">About</a><a>-</a>
-        <a class="link_button" onclick="load_page('skills')" id="skill_button">Skills</a><a>-</a>
-        <a class="link_button" onclick="load_page('portfolio')" id="portfolio_button">Portfolio</a><a>-</a>
-        <a class="link_button" onclick="load_page('contact')" id="contact_button">Contact</a>
-    </div>
-    <div class="border_block_1"></div>  <!-- border block-->
-    <div class="background_gradient"></div>
-</header>
-<body>
-    <span class="ajax_body_span">
-        <div class="ajax_body" id="ajax_body">
-            <!-- ajax content goes here -->
-            
-        </div>
-    </span>
-    <div class="star_storage" id="star_storage"></div>  <!-- stars storage -->
-    <script type="text/javascript" src="stars_spawn.js"></script>  <!-- stars script -->
-    <div class="lantern_storage" id="lantern_storage"></div>  <!-- lantern storage -->
-    <script type="text/javascript" src="lantern_spawn.js"></script>  <!-- lantern script -->
-</body>
+    <script type="text/javascript" src="page_load.js"></script>  <!-- runs functions on page load -->
 </html>
