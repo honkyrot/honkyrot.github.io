@@ -9,12 +9,14 @@
     </head>
 
     <header>
-        <div class="background_gradient" id="background_gradient"></div>  <!-- background gradient -->
+        <!-- <div class="background_gradient" id="background_gradient"></div>   background gradient -->
 
         <!-- a main title, shows as honkyrot.dev -->
         <div class="main_title" id="main_title">
-            <div class="title_decor" id="title_decor"> </div>
-            <h1><span class="main_title_text" id="main_title_text">honkyrot.dev</span> - <span class="page_title_text" id="page_title_text"></span></h1>
+            <div class="title_decor" id="title_decor">
+                <div class="bg_title_decor" id="bg_title_decor"></div>
+            </div>
+            <h1 style="position: relative;"><span class="main_title_text" id="main_title_text">honkyrot.dev</span> - <span class="page_title_text" id="page_title_text"></span></h1>
         </div>
         
         <!-- contains my nav buttons -->
@@ -23,15 +25,24 @@
                 <a class="link_button" onclick="load_page('home')" id="home_button">Home</a>
             </div>
             <div class="nav_link_div" id="link_button_2"> 
-                <a class="link_button" onclick="load_page('test_hahaha')" id="about_button">About</a>
+                <a class="link_button" onclick="load_page('about')" id="about_button">About</a>
+            </div>
+            <div class="nav_link_div" id="link_button_3"> 
+                <a class="link_button" onclick="load_page('skills')" id="skills_button">Skills</a>
+            </div>
+            <div class="nav_link_div" id="link_button_4"> 
+                <a class="link_button" onclick="load_page('portfolio')" id="portfolio_button">Portfolio</a>
+            </div>
+            <div class="nav_link_div" id="link_button_5"> 
+                <a class="link_button" onclick="load_page('contact')" id="contact_button">Contact</a>
+            </div>
+            <div class="nav_link_div" id="link_button_6"> 
+                <a class="link_button" onclick="load_page('other')" id="other_button">Other</a>
             </div>
         </div>
     </header>
 
     <body id="body">
-        
-
-        <canvas class="star_canvas" id="star_canvas"></canvas>  <!-- a canvas for stars -->
 
         <span class="ajax_body_span">
             <div class="ajax_body" id="ajax_body">
@@ -45,5 +56,5 @@
     </footer>
 
     <script type="text/javascript" src="ajax_loader.js"></script>  <!-- ajax script -->
-    <script type="text/javascript" src="star_canvas.js"></script>  <!-- star canvas script -->
+    <script type="text/javascript" src="page_load.js"></script>  <!-- runs functions on page load -->
 </html>

@@ -1,11 +1,19 @@
 // This file contains the functions that are used to load the pages
-// Also a small transition to make the page look better\
+// Also a small transition to make the page look better
 
 const ajax_body = document.getElementById("ajax_body");
 const ajax_title = document.getElementById("page_title_text");  // title_title is the title of the page (e.g. Home, About, etc.)
 const main_title = document.getElementById("main_title");  // div containing the title
 const title_decor = document.getElementById("title_decor");  // bg of title
+const bg_title_decor = document.getElementById("bg_title_decor");  // bg of title
+const nav_link_section = document.getElementById("nav_link_section");  // nav links
 let current_page = null;  // current page is home by default
+
+// update page decorations
+function refresh_decor_page() {
+    title_decor.style.width = main_title.offsetWidth + 40 + "px";
+    bg_title_decor.style.width = main_title.offsetWidth + 40 + "px";
+}
 
 function load_page(page_name) {  // page_name is a string
     if (page_name == current_page) {
@@ -30,7 +38,8 @@ function load_page(page_name) {  // page_name is a string
             ajax_body.innerHTML = temp_storage;
             ajax_title.innerHTML = page_title;
 
-            title_decor.style.width = main_title.offsetWidth + 40 + "px";
+            switch_case_page(page_name);
+            refresh_decor_page();
         }, 200);  // 200ms
         }
     };
@@ -38,18 +47,33 @@ function load_page(page_name) {  // page_name is a string
     xhttp.open("GET", file_name, true);
     xhttp.send();  // does whatever ajax does
 }
-const debug = false;
-var website_loaded = false;
+
+// intro for animations
+function first_load()
+{
+    main_title.style.opacity = "1";
+    
+    setTimeout(() => {
+        nav_link_section.style.width = "90%";
+    }, 200);
+}
+
+//addEventListener("resize", (refresh_decor_page) => {});
+
+const debug = true;
 
 const main_title_text = document.getElementById("main_title_text");
 
 // load home page on page load
 window.onload = function() {
     if (!debug) {
+        first_load();
         load_page("home");
         //load_page("home");
     } else {
-        console.log("Debug mode is on, not loading page");
+        console.log("Debug mode is on, not loading default page");
+        first_load();
+        load_page("skills");
     }
 }
 
