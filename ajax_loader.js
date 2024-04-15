@@ -60,7 +60,7 @@ function first_load()
 
 //addEventListener("resize", (refresh_decor_page) => {});
 
-const debug = true;
+const debug = false;
 
 const main_title_text = document.getElementById("main_title_text");
 
@@ -69,7 +69,6 @@ window.onload = function() {
     if (!debug) {
         first_load();
         load_page("home");
-        //load_page("home");
     } else {
         console.log("Debug mode is on, not loading default page");
         first_load();
