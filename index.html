@@ -12,7 +12,7 @@
         <!-- <div class="background_gradient" id="background_gradient"></div>   background gradient -->
 
         <!-- a main title, shows as honkyrot.dev -->
-        <div class="main_title" id="main_title">
+        <div class="main_title unselectable" id="main_title">
             <div class="title_decor" id="title_decor">
                 <div class="bg_title_decor" id="bg_title_decor"></div>
             </div>
@@ -20,7 +20,7 @@
         </div>
         
         <!-- contains my nav buttons -->
-        <div class="nav_link_section" id="nav_link_section">
+        <div class="nav_link_section unselectable" id="nav_link_section">
             <div class="nav_link_div" id="link_button_1"> 
                 <a class="link_button" onclick="load_page('home')" id="home_button">Home</a>
             </div>
@@ -43,7 +43,6 @@
     </header>
 
     <body id="body">
-
         <span class="ajax_body_span">
             <div class="ajax_body" id="ajax_body">
                 <!-- ajax content goes here -->
@@ -57,4 +56,5 @@
 
     <script type="text/javascript" src="ajax_loader.js"></script>  <!-- ajax script -->
     <script type="text/javascript" src="page_load.js"></script>  <!-- runs functions on page load -->
+    <script type="text/javascript" src="visuals.js"></script>  <!-- visuals script -->
 </html>

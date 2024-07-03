@@ -9,6 +9,21 @@ const bg_title_decor = document.getElementById("bg_title_decor");  // bg of titl
 const nav_link_section = document.getElementById("nav_link_section");  // nav links
 let current_page = null;  // current page is home by default
 
+var can_load_new_page = true;  // transition check
+
+// web color
+var web_color = getComputedStyle(document.documentElement).getPropertyValue('--web_color');
+
+// list of curated colors for the page decorations (white text on colored bg)
+const color_list = [
+    "#FF0080",  // original pink
+    "#FF5733",  // orange
+    "#A000FF",  // purple
+    "#00A0FF",  // blue
+    "#E00000",  // red
+    "#00B000",  // green
+]
+
 // update page decorations
 function refresh_decor_page() {
     title_decor.style.width = main_title.offsetWidth + 40 + "px";
@@ -16,10 +31,12 @@ function refresh_decor_page() {
 }
 
 function load_page(page_name) {  // page_name is a string
-    if (page_name == current_page) {
+    if (page_name == current_page || !can_load_new_page) {
         // skip loading the page if it's already loaded
         return;
     }
+
+    can_load_new_page = false;
 
     current_page = page_name;
     var xhttp = new XMLHttpRequest();
@@ -38,8 +55,10 @@ function load_page(page_name) {  // page_name is a string
             ajax_body.innerHTML = temp_storage;
             ajax_title.innerHTML = page_title;
 
+            color_page();
             switch_case_page(page_name);
             refresh_decor_page();
+            can_load_new_page = true;
         }, 200);  // 200ms
         }
     };
@@ -58,9 +77,24 @@ function first_load()
     }, 200);
 }
 
+// apply color on page change
+function color_page(color_override = null) {
+    var random_color = "#000000";  // default to black
+
+    if (color_override != null) {
+        random_color = color_override;
+    } else {
+        random_color = color_list[Math.floor(Math.random() * color_list.length)];
+    }
+
+    web_color = random_color;
+    document.documentElement.style.setProperty('--web_color', random_color);
+}
+
+// 
+
 //addEventListener("resize", (refresh_decor_page) => {});
 
-const debug = false;
 
 const main_title_text = document.getElementById("main_title_text");
 
@@ -72,11 +106,6 @@ window.onload = function() {
     } else {
         console.log("Debug mode is on, not loading default page");
         first_load();
-        load_page("skills");
+        load_page("portfolio");
     }
 }
-
-// force load page (debug for testing)
-//window.onload = function() {
-//    load_page("skills");
-//}
