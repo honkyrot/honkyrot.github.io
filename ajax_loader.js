@@ -95,6 +95,7 @@ function color_page(color_override = null) {
 
 //addEventListener("resize", (refresh_decor_page) => {});
 
+const debug = false;
 
 const main_title_text = document.getElementById("main_title_text");
 
