@@ -22,6 +22,7 @@ const color_list = [
     "#00A0FF",  // blue
     "#E00000",  // red
     "#00B000",  // green
+    "#00BFBF",  // cyan
 ]
 
 // update page decorations
@@ -95,7 +96,6 @@ function color_page(color_override = null) {
 
 //addEventListener("resize", (refresh_decor_page) => {});
 
-const debug = false;
 
 const main_title_text = document.getElementById("main_title_text");
 

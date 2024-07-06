@@ -286,7 +286,7 @@ a {
     font-size: 30px;
     padding: 8px;
     margin-top: 20px;
-    transition: all 0.25s;
+    transition: 0.2s all;
     height: auto;
 }
 
@@ -302,7 +302,7 @@ a {
     position: absolute;
     left: 25%;
     translate: translateX(-50%);
-    transition: all 0.25s;
+    transition: 0.2s all;
 }
 
 /* seperate container for dropdown*/
@@ -310,6 +310,7 @@ a {
     display: none;
     position: relative;
     opacity: 0;
+    transition: 0.2s all;
 }
 
 /* portfolio content, holds all items */
@@ -353,7 +354,7 @@ a {
     background-color: rgba(0, 0, 0, 0.2);
     color: #ffffff;
     text-decoration: none;
-    transition: 0.4s all;
+    transition: 0.5s all;
     font-size: 20px;
     padding: 2px;
     padding-left: 8px;

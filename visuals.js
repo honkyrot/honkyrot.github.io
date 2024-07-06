@@ -11,16 +11,28 @@ function dropdown_section(section_name) {
     //console.log(div.style.display);
     // check if div is hidden
     if (div.style.display == "none" || div.style.display == "") {
+        // open
         div.style.display = "block";
-        div.style.opacity = 1;
-        div.style.height = "auto";
+        div.style.height = "0px";  // animation fix
+
+        // set height to content height
+        div.style.height = div.scrollHeight + "px";
+
+        setTimeout(() => {
+            div.style.opacity = 1;
+        }, 100);
 
         // flip arrow
         arrow.style.transform = "rotate(180deg)";
     } else {
-        div.style.display = "none";
+        // close
+        
         div.style.opacity = 0;
         div.style.height = "0px";
+
+        setTimeout(() => {
+            div.style.display = "none";
+        }, 200);
 
         // flip arrow
         arrow.style.transform = "rotate(0deg)";
