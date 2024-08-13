@@ -25,7 +25,7 @@ div {
 
 p {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 24px;
     cursor: default;
 }
 
@@ -211,17 +211,7 @@ a {
     cursor: pointer;
 }
 
-/* github link */
-.honkyrot_github_link {  
-    background: linear-gradient(to right, #ff0000, #ffff00 , #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
-
-/* MY EMAIL !!!! */
+/* MY EMAIL !!!! (and github) */
 .email_link {
     background-color: #212738;
     color: var(--web_color);;
@@ -303,6 +293,10 @@ a {
     left: 25%;
     translate: translateX(-50%);
     transition: 0.2s all;
+}
+
+.portfolio_dropdown_arrow:hover {
+    cursor: pointer;
 }
 
 /* seperate container for dropdown*/
