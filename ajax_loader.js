@@ -22,6 +22,7 @@ const color_list = [
     "#00A0FF",  // blue
     "#E00000",  // red
     "#00B000",  // green
+    "#00BFBF",  // cyan
 ]
 
 // update page decorations
