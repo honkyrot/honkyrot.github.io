@@ -16,13 +16,13 @@ var web_color = getComputedStyle(document.documentElement).getPropertyValue('--w
 
 // list of curated colors for the page decorations (white text on colored bg)
 const color_list = [
-    "#FF0080",  // original pink
-    "#FF5733",  // orange
-    "#A000FF",  // purple
-    "#00A0FF",  // blue
-    "#E00000",  // red
-    "#00B000",  // green
-    "#00BFBF",  // cyan
+    "#b9005dff",  // original pink
+    "#a1321aff",  // orange
+    "#7100b3ff",  // purple
+    "#006caaff",  // blue
+    "#a10000ff",  // red
+    "#007c00ff",  // green
+    "#006969ff",  // cyan
 ]
 
 // update page decorations
